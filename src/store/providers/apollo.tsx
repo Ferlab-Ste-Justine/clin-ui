@@ -9,7 +9,8 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import get from 'lodash/get'
 import { GraphqlBackend, GraphqlProvider } from 'store/providers';
-import { getAccessTokenStatus } from 'auth/keycloak-api/utils';
+import keycloak from "auth/keycloak";
+import {createAuthHeaderValueForToken} from "../../utils/helper";
 
 const ARRANGER_API = get(window, 'CLIN.arrangerBaseUrl', process.env.REACT_APP_ARRANGER_API)
 const PROJECT_ID = get(window, 'CLIN.arrangerProjectId', process.env.REACT_APP_ARRANGER_PROJECT_ID)
@@ -23,12 +24,12 @@ const arrangerLink = createHttpLink({
   uri: `${ARRANGER_API}/${PROJECT_ID}/graphql`,
 });
 
-const getAuthLink = (token: string) => (
+const getAuthLink = () => (
   setContext((_, { headers }) => (
       {
         headers: {
           ...headers,
-          authorization: `Bearer ${token || getAccessTokenStatus}`
+          authorization:  createAuthHeaderValueForToken(keycloak.token)
         },
       }
   ))
@@ -38,12 +39,8 @@ const backendUrl = (backend: GraphqlBackend) => (
   backend === GraphqlBackend.FHIR ? fhirLink : arrangerLink
 );
 
-type Token = {
-  token: string;
-}
-
-const Provider = ({ children, backend = GraphqlBackend.FHIR, token }: GraphqlProvider & Token): ReactElement => {
-  const header = getAuthLink(token);
+const Provider = ({ children, backend = GraphqlBackend.FHIR }: GraphqlProvider): ReactElement => {
+  const header = getAuthLink();
 
   const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
     cache: new InMemoryCache({ addTypename: false }),
