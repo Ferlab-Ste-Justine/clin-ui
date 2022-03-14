@@ -1,4 +1,5 @@
 {
+  "chromosome": "Chromosome",
   "component.table.itemcount.results.multiple.pages": "Results <strong>{from}</strong> - <strong>{to}</strong> of <strong>{total}</strong>",
   "component.table.itemcount.results.one.page": "{count, plural, =0 {No result} other {<strong>#</strong> results}}",
   "compound.heterozygous": "{num, plural, =0 {compound heterozygous} other {compound heterozygous}}",
@@ -79,9 +80,11 @@
   "mother": "mother",
   "notification.error": "error",
   "notification.success": "success",
+  "parent": "Parent",
   "potential.compound.heterozygous": "{num, plural, =0 {potential compound heterozygous} other {potential compound heterozygous}}",
   "potential.compound.heterozygous.abbrev": "{num, plural, =0 {potential compound het.} other {potential compound het.}}",
   "predictions": "Predictions",
+  "proband": "Proband",
   "querybuilder.actions.addQuery": "New query",
   "querybuilder.actions.changeOperatorTo": "Change operator to",
   "querybuilder.actions.clear.buttonTitle": "Clear all",
@@ -193,10 +196,10 @@
   "screen.variantDetails.clinicalAssociationsTab.inheritance": "Inheritance",
   "screen.variantDetails.clinicalAssociationsTab.source": "Source",
   "screen.variantDetails.frequenciesTab.LDMColumn": "Cohort",
+  "screen.variantDetails.frequenciesTab.frequencies": "Frequency",
   "screen.variantDetails.frequenciesTab.nbAllelesAlt": "# Alleles ALT",
   "screen.variantDetails.frequenciesTab.nbAllelesAltRef": "# Alleles (ALT + REF)",
   "screen.variantDetails.frequenciesTab.nbHomozygotes": "# Homozygotes",
-  "screen.variantDetails.frequenciesTab.frequencies": "Frequency",
   "screen.variantDetails.panel.emptyTable": "No data Available",
   "screen.variantDetails.patientsTab.adAlt": "Variant Allele Depth ALT",
   "screen.variantDetails.patientsTab.adFreq": "Allelic ratio atl/alt+ref",
@@ -232,7 +235,5 @@
   "screen.variantdetails.tab.summary": "Summary",
   "screen.variantsearch.table.gnomAd": "gnomAD ",
   "standard.format.date": "Format YYYY-MM-DD",
-  "zygosity": "zygozity",
-  "proband": "Proband",
-  "parent": "Parent"
+  "zygosity": "zygozity"
 }

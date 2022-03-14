@@ -1,4 +1,5 @@
 {
+  "chromosome": "Chromosome",
   "component.table.itemcount.results.multiple.pages": "Résultats <strong>{from}</strong> - <strong>{to}</strong> sur <strong>{total}</strong>",
   "component.table.itemcount.results.one.page": "{count, plural, =0 {Aucun résultat} other {<strong>#</strong> résultats}}",
   "compound.heterozygous": "{num, plural, =0 {hétérozygote composé} other {hétérozygotes composés}}",
@@ -79,9 +80,11 @@
   "mother": "mère",
   "notification.error": "erreur",
   "notification.success": "succès",
+  "parent": "Parent",
   "potential.compound.heterozygous": "{num, plural, =0 {hétérozygote composé potentiel} other {hétérozygotes composés potentiels}}",
   "potential.compound.heterozygous.abbrev": "{num, plural, =0 {hét. composé potentiel} other {hét. composés potentiels}}",
   "predictions": "Prédictions",
+  "proband": "Cas-index",
   "querybuilder.actions.addQuery": "Nouvelle requête",
   "querybuilder.actions.changeOperatorTo": "Changer l'opérateur à",
   "querybuilder.actions.clear.buttonTitle": "Tout effacer",
@@ -193,10 +196,10 @@
   "screen.variantDetails.clinicalAssociationsTab.inheritance": "Héritage",
   "screen.variantDetails.clinicalAssociationsTab.source": "Source",
   "screen.variantDetails.frequenciesTab.LDMColumn": "Cohorte",
+  "screen.variantDetails.frequenciesTab.frequency": "Fréquence",
   "screen.variantDetails.frequenciesTab.nbAllelesAlt": "# Allèles ALT",
   "screen.variantDetails.frequenciesTab.nbAllelesAltRef": "# Allèles (ALT + REF)",
   "screen.variantDetails.frequenciesTab.nbHomozygotes": "# Homozygotes",
-  "screen.variantDetails.frequenciesTab.frequency": "Fréquence",
   "screen.variantDetails.panel.emptyTable": "Aucune donnée disponible",
   "screen.variantDetails.patientsTab.adAlt": "Profondeur allélique ALT",
   "screen.variantDetails.patientsTab.adFreq": "Ratio allélique ALT / (ALT+REF)",
@@ -232,7 +235,5 @@
   "screen.variantdetails.tab.summary": "Résumé",
   "screen.variantsearch.table.gnomAd": "gnomAD ",
   "standard.format.date": "Format AAAA-MM-JJ",
-  "zygosity": "zigosité",
-  "proband": "Cas-index",
-  "parent": "Parent"
+  "zygosity": "zigosité"
 }
