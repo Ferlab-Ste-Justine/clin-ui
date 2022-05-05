@@ -123,7 +123,11 @@ const SummaryCard = ({ loading, variant, genes }: OwnProps) => {
             <Row className={styles.row}>
               <Text className={styles.contentTitle}>Patients</Text>
               <Text className={styles.contentValue}>
-                <a onClick={() => history.push(`/variant/entity/${variant?.hash}/patients?patientid=${patientId}`)}>
+                <a
+                  onClick={() =>
+                    history.push(`/variant/entity/${variant?.hash}/patients?patientid=${patientId}`)
+                  }
+                >
                   {variant?.frequency_RQDM.total.pn}
                 </a>
                 /{variant?.frequency_RQDM.total.an}
@@ -131,14 +135,14 @@ const SummaryCard = ({ loading, variant, genes }: OwnProps) => {
             </Row>
             <Row className={styles.row}>
               <Text className={styles.contentTitle}>
-                {intl.get('screen.variantDetails.summaryTab.patientTable.frequencies')}
+                {intl.get('screen.variantDetails.summaryTab.patientTable.frequency')}
               </Text>
               <Text className={styles.contentValue}>
                 {variant?.frequency_RQDM?.total?.af.toExponential(2)}
               </Text>
             </Row>
             <Row className={styles.row}>
-              <Text className={styles.contentTitle}>Annotations</Text>
+              <Text className={styles.contentTitle}>{intl.get('annotationUpdate')}</Text>
               <Text className={styles.contentValue}>
                 {variant?.last_annotation_update
                   ? formatTimestampToISODate(variant?.last_annotation_update)
