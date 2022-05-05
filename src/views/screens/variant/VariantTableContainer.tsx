@@ -23,6 +23,7 @@ import { Varsome, VarsomeClassifications } from 'graphql/variants/models';
 import ProTable from '@ferlab/ui/core/components/ProTable';
 import { ProColumnType } from '@ferlab/ui/core/components/ProTable/types';
 import { getProTableDictionary } from 'utils/translation';
+import capitalize from 'lodash/capitalize';
 
 import style from './VariantTableContainer.module.scss';
 
@@ -81,6 +82,9 @@ const getVariantColumns = (
     key: 'variant_class',
     title: intl.get('screen.patientvariant.results.table.type'),
     dataIndex: 'variant_class',
+    render: (variant: string) =>
+      intl.get(variant).defaultMessage(capitalize(variant))
+    
   },
   {
     key: 'rsnumber',
