@@ -42,6 +42,7 @@ const ClinicalCard = ({ hash }: OwnProps) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href={`https://www.ncbi.nlm.nih.gov/clinvar/variation/${clinvarId}`}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     {clinvarId}
                   </a>
