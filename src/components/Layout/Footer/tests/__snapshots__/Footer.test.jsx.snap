@@ -17,7 +17,6 @@ exports[`Footer should be as the snapshot 1`] = `
         <ul>
           <li>
             <a
-              href="https://notebook.qa.cqgc.hsj.rtss.qc.ca"
               rel="noreferrer"
               target="_blank"
             >
@@ -26,7 +25,6 @@ exports[`Footer should be as the snapshot 1`] = `
           </li>
           <li>
             <a
-              href="https://fhir-console.qa.cqgc.hsj.rtss.qc.ca/home"
               rel="noreferrer"
               target="_blank"
             >
