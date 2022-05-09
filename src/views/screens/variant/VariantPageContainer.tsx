@@ -166,7 +166,7 @@ const VariantPageContainer = ({ mappingResults }: VariantPageContainerData) => {
             );
           },
           selectedFilterContent: selectedFilterContent,
-          blacklistedFacets: ['genes.symbol', 'locus'],
+          blacklistedFacets: ['consequences.symbol', 'locus'],
         }}
         getResolvedQueryForCount={(sqon) => getVariantResolvedSqon(sqon)}
         fetchQueryCount={async (sqon) => {

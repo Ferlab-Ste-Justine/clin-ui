@@ -64,7 +64,7 @@ const Suggester = ({ suggestionType, placeholderText }: SuggesterProps) => {
       };
     } else {
       fg = {
-        field: 'genes.symbol',
+        field: 'consequences.symbol',
         title: '',
         type: VisualType.Checkbox,
       };
