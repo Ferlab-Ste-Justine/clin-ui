@@ -1,3 +1,7 @@
+# Deprecation
+
+This service is deprecated and will no longer be maintained.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
