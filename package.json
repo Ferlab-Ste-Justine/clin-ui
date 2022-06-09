@@ -8,7 +8,7 @@
     "@ferlab/style": "^1.18.1",
     "@ferlab/ui": "^3.6.2",
     "@react-keycloak/web": "^3.4.0",
-    "@reduxjs/toolkit": "^1.6.2",
+    "@reduxjs/toolkit": "^1.8.1",
     "antd": "^4.17.1",
     "axios": "^0.24.0",
     "classnames": "^2.3.1",
